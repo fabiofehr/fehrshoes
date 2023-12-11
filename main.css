@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header, section h2, button, strong {
+    font-family: 'Bungee', cursive;
+    font-weight: normal
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    padding: 16px;
+    background-color: rgb(88, 88, 229);
+    color: #fff;
+}
+
+header nav li {
+    display: inline;
+    margin-left: 32px;
+    font-size: 20px;
+}
+
+header nav li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.container,
+.produtos {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container,
+section .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section {
+    padding: 32px 0;
+}
+
+section h2 {
+    margin-bottom: 16px;
+    color: rgb(88, 88, 229);
+}
+
+hr {
+    width: 100%;
+    border: 1px solid rgb(88, 88, 229);
+    margin-bottom: 48px;
+    }
+
+section .container {
+    align-items: flex-start;
+}
+
+section p {
+    margin-bottom: 8px;
+}
+
+.loja {
+    margin-right: 32px;
+    width: 40%;
+}
+
+strong {
+    font-size: 24px;
+}
+
+.produtos h2 {
+    color:rgb(88, 88, 229);
+    font-size: 20px;
+}
+
+.tenis {
+    display: flex;
+    list-style: none;
+}
+
+.tenis img{
+    width: 100%;
+}
+
+.tenis li {
+    margin-right: 12px;
+    margin-left: 12px;
+}
+
+.produtos button {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    background-color: rgb(88, 88, 229);
+    color: #fff;
+    font-size: 16px;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.tenis li strong {
+    margin: 16px 0;
+    display: block;
+}
+
+@media screen and (min-width:0px) and (max-width: 640px) {
+    section .container,
+    section .tenis {
+        display: block;
+        padding: 32px;
+    }
+
+
+
+    .container {
+        max-width: 100%;
+    }
+
+    .loja {
+        padding: 32px;
+        width: 100%;
+    }
+
+    section .produtos {
+        padding: 32px;
+    }
+}
+
+@media screen and (min-width:641px) and (max-width:1023px) {
+    .container{
+        max-width: 90%;
+    }
+
+    section .container {
+        display: block;
+        padding: 32px;
+    }
+
+    section .tenis {
+        display: flex;
+        padding: 32px;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .loja {
+        margin-right: 32px;
+        width: 100%;
+        margin-bottom: 32px;
+    }
+
+    p {
+        font-size: 36px;
+    }
+
+    h2,
+    section .produtos h2 {
+        font-size: 50px;
+    }
+
+    section .tenis h2 {
+        font-size: 32px;
+    }
+
+    section .produtos {
+        padding: 32px;
+    }
+
+
+    .tenis img{
+        width: 100%;
+
+    }
+
+    section .tenis {
+        display: flex;
+    }
+
+}
